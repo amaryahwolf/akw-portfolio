@@ -29,10 +29,12 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     // Return a component to Navigation with useState variable and function, and call renderPage function
+    return (
     <div>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />  
-      <Footer />
       {renderPage()}
+      <Footer />
     </div>
+    )
 
-}
+};

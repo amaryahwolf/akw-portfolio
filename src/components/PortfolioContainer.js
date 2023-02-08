@@ -5,7 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
     // Create useState with currentPage variable and setCurrentPage function
@@ -31,6 +31,7 @@ export default function PortfolioContainer() {
     // Return a component to Navigation with useState variable and function, and call renderPage function
     <div>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />  
+      <Footer />
       {renderPage()}
     </div>
 

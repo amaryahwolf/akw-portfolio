@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
+const styles = {
+  nameForm: {
+
+  },
+  messageForm: {
+    height: '100px'
+  }
+}
+
 export default function Contact() {
     
     // Create state variables for form fields
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
+    const [fieldValue, setFieldValue] = useState('');
     
     // Create state variables for error handling
     const [errorMessage, setErrorMessage] = useState('');
@@ -37,13 +47,7 @@ export default function Contact() {
       return;
     }
 
-    // TODO: add logic to alert user that all three inputs are required
-    // if (!checkPassword(password)) {
-    //   setErrorMessage(
-    //     `Choose a more secure password for the account: ${userName}`
-    //   );
-    //   return;
-    // }
+    // TODO: add onBlur functionality to alert user that all three inputs are required
 
     // Clear input after submission
     setName('');
@@ -52,7 +56,7 @@ export default function Contact() {
   };
   return (
     <div className="container-fluid d-block text-center mt-5">
-        <h1>Contact</h1>
+        <h3>Write me.</h3>
       <form className="form">
         <div className="mb-3">
         <input
@@ -61,6 +65,7 @@ export default function Contact() {
           onChange={handleInputChange}
           type="text"
           placeholder="name"
+          className="w-25"
         />
         </div>
         <div className="mb-3">
@@ -70,6 +75,7 @@ export default function Contact() {
           onChange={handleInputChange}
           type="email"
           placeholder="email"
+          className="w-25"
         />
         </div>
         <div className="mb-3">
@@ -79,9 +85,11 @@ export default function Contact() {
           onChange={handleInputChange}
           type="text"
           placeholder="message"
+          style={styles.messageForm}
+          className="w-25"
         />
         </div>
-        <button type="button" onClick={handleFormSubmit}>
+        <button className="btn" type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

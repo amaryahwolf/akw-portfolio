@@ -1,17 +1,24 @@
 // Import react
 import React from 'react';
 
+const styles = {
+  header: {
+      width: '100%',
+      height: '60px'
+  }
+}
+
 // Create function to render navigation bar
 function Navigation({ currentPage, handlePageChange }) {
     return (
-         <ul className="nav nav-tabs">
+         <ul style={styles.header} className="nav justify-content-center align-items-center bg-light">
             <li className="nav-item">
               <a
                 href="#about"
                 onClick={() => handlePageChange('About')}
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               >
-                About
+                about
               </a>
             </li>
             <li className="nav-item">
@@ -20,7 +27,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('Projects')}
                 className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
               >
-                Projects
+                projects
               </a>
             </li>
             <li className="nav-item">
@@ -29,7 +36,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('Resume')}
                 className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
               >
-                Resume
+                resume
               </a>
             </li>
             <li className="nav-item">
@@ -38,7 +45,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange('Contact')}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
               >
-                Contact
+                contact
               </a>
             </li>
         </ul>

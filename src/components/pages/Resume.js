@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Resume() {
     return (
-      <div>
+    <div className="container-fluid d-block text-center mt-5">   
     <h1>Resume</h1>
     <h2>Technical Skills and Proficiencies</h2>
     {/* TODO: add blurb about favorite part of coding */}
-    <ul>
+    <ul className="list-unstyled">
       <li>
         HTML, CSS
       </li>
@@ -53,7 +53,7 @@ export default function Resume() {
         Git, Heroku
       </li>
     </ul>
-    <a href="https://docs.google.com/document/d/1-A6arbukBKoKJ_yGf6pPbeJkxxXGFr2BObC0_WwnNiE/export?format=pdf">Download Resume</a>
+    <h3><a href="https://docs.google.com/document/d/1-A6arbukBKoKJ_yGf6pPbeJkxxXGFr2BObC0_WwnNiE/export?format=pdf">Download Resume</a></h3>
     </div>
     );
   }

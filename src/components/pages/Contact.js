@@ -51,7 +51,7 @@ export default function Contact() {
     setEmail('');
   };
   return (
-    <div>
+    <div className="container-fluid d-block text-center mt-5">
         <h1>Contact</h1>
       <form className="form">
         <div className="mb-3">

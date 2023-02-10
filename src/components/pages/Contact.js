@@ -55,42 +55,39 @@ export default function Contact() {
     setEmail('');
   };
   return (
-    <div className="container-fluid d-block text-center mt-5">
-        <h3>Write me.</h3>
+    <div className="row justify-content-center mt-5">
+      <div className="col-sm-4"> 
+        <h3 className="text-center">write me.</h3>
       <form className="form">
-        <div className="mb-3">
+          <p className="mb-0">name:</p>
         <input
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="name"
-          className="w-25"
+          className="w-100 mb-1"
         />
-        </div>
-        <div className="mb-3">
+        <p className="mb-0">email:</p>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
-          className="w-25"
+          className="w-100 mb-1"
         />
-        </div>
-        <div className="mb-3">
+        <div className="">
+        <p className="mb-0">message:</p>
         <input
           value={message}
           name="message"
           onChange={handleInputChange}
           type="text"
-          placeholder="message"
           style={styles.messageForm}
-          className="w-25"
+          className="w-100 mb-1"
         />
         </div>
         <button className="btn" type="button" onClick={handleFormSubmit}>
-          Submit
+          submit
         </button>
       </form>
       {errorMessage && (
@@ -98,6 +95,7 @@ export default function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+    </div>
     </div>
   );
   

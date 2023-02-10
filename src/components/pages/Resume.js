@@ -4,10 +4,9 @@ export default function Resume() {
     return (
     <div className='row justify-content-center mt-5'>
     <div className="col-sm-4">   
-    <h1 className="text-center">Resume</h1>
-    <h2>Technical Skills and Proficiencies</h2>
+    <h3 className="text-center">Technical Proficiencies</h3>
     {/* TODO: add blurb about favorite part of coding */}
-    <ul className="list-unstyled">
+    <ul className="list-unstyled text-center">
       <li>
         HTML, CSS
       </li>

@@ -47,9 +47,9 @@ const projects = [
 
 export default function Projects() {
     return (
-    <div className="container-fluid d-flex justify-content-center mt-5">
+    <div className="container-fluid row justify-content-center mt-5">
       {projects.map(() => (
-        <div className="col-12 col-xl-6">
+        <div className="col-sm-4">
           <img src="{projects.img}">
           </img>
           <h4>

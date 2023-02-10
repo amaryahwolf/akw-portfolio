@@ -57,8 +57,8 @@ export default function Contact() {
   return (
     <div className="row justify-content-center mt-5">
       <div className="col-sm-4"> 
-        <h3 className="text-center">write me.</h3>
-      <form className="form">
+        <h3 className="text-center">Write me</h3>
+      <form className="form" action="mailto:amaryahwolf@gmail.com." method="get">
           <p className="mb-0">name:</p>
         <input
           value={name}

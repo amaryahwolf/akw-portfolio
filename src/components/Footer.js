@@ -3,7 +3,7 @@ import React from 'react';
 
 const styles = {
     footer: {
-        position: 'absolute',
+        position: 'fixed',
         bottom: 0,
         width: '100%',
         height: '40px',
@@ -12,7 +12,7 @@ const styles = {
 
 function Footer() {
     return (
-        <footer style={styles.footer} className="d-flex container-fluid justify-content-center bg-light">   
+        <footer style={styles.footer} className="d-flex container-fluid justify-content-center bg-light mb-2">   
         <ul className="d-flex nav justify-content-center list-unstyled">
             <li className="m-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" className=''>

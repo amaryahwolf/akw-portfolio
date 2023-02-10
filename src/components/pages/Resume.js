@@ -39,31 +39,6 @@ export default function Resume() {
     </ul>
     </div>
     <div className="col-sm-4">
-    <h6>API Interaction</h6>
-    <ul>
-      <li>
-        API
-      </li>
-      <li>
-        JSON
-      </li>
-      <li>
-        AJAX
-      </li>
-    </ul>
-    </div>
-    <div className="col-sm-4">
-    <h6>Databases</h6>
-    <ul>
-      <li>
-        MySQL
-      </li>
-      <li>
-        MongoDB
-      </li>
-    </ul>
-    </div>
-    <div className="col-sm-4">
     <h6>Server-Side Development</h6>
     <ul>
       <li>
@@ -84,6 +59,31 @@ export default function Resume() {
     </ul>
     </div>
     <div className="col-sm-4">
+    <h6>API Interaction</h6>
+    <ul>
+      <li>
+        API
+      </li>
+      <li>
+        JSON
+      </li>
+      <li>
+        AJAX
+      </li>
+    </ul>
+    </div>
+    <div className="col-sm-4 mt-4">
+    <h6>Databases</h6>
+    <ul>
+      <li>
+        MySQL
+      </li>
+      <li>
+        MongoDB
+      </li>
+    </ul>
+    </div>
+    <div className="col-sm-4 mt-4">
     <h6>Deployment/CL Fundamentals</h6>
     <ul>
       <li>
@@ -97,7 +97,7 @@ export default function Resume() {
       </li>
     </ul>
     </div>
-    <div className="col-sm-4">
+    <div className="col-sm-4 mt-4">
     <h6>Computer Science</h6>
     <ul>
       <li>

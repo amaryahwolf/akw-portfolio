@@ -7,6 +7,12 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Footer from './Footer';
 
+const styles = {
+  font: {
+    fontFamily: "'Manrope', sans-serif"
+  }
+}
+
 export default function PortfolioContainer() {
     // Create useState with currentPage variable and setCurrentPage function
     const [currentPage, setCurrentPage] = useState('About');
@@ -30,7 +36,7 @@ export default function PortfolioContainer() {
 
     // Return a component to Navigation with useState variable and function, and call renderPage function
     return (
-    <div>
+    <div style={styles.font}>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />  
       {renderPage()}
       <Footer />

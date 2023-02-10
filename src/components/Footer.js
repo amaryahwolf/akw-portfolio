@@ -20,7 +20,6 @@ function Footer() {
                 </svg>
                 <a
                     href="https://www.linkedin.com/in/amaryah-wolf" className="">
-                    {/* TODO: add linkedin icon */}
                     linkedin    
                 </a>
             </li>

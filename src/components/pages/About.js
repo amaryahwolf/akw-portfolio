@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="container-fluid d-flex justify-content-center mt-5">
       <div className="col-sm-4"> 
-      <h3>Amaryah Wolf</h3>
+      <h3 className="mb-3">Amaryah Wolf</h3>
       <p>
         I am an agile and MERN stack software developer. My interests have lent themselves to human analytics as a direct care worker and project lead, and now have a new evolution towards machine analytics.
       </p>

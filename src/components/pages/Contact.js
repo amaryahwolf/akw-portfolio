@@ -2,25 +2,30 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 const styles = {
-  nameForm: {
-
-  },
   messageForm: {
     height: '100px'
-  }
+  },
+  error: {
+    color: 'red',
+  },
 }
 
 export default function Contact() {
     
     // Create state variables for form fields
+    const [formState, setFormState] = useState({
+      name: '',
+      email: '',
+      message:''
+    })
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
-    const [fieldValue, setFieldValue] = useState('');
     
     // Create state variables for error handling
     const [errorMessage, setErrorMessage] = useState('');
 
+    // Function to handle input
     const handleInputChange = (e) => {
 
     // Get value and name of input
@@ -38,6 +43,21 @@ export default function Contact() {
     }
   };
 
+  // Function to handle blur
+  const handleBlur = (e) => {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required!`)
+      } else {
+        setErrorMessage("");
+      }
+      
+      if (!errorMessage) {
+        setFormState({ ...formState, [e.target.value]: e.target.value });
+      }
+    };
+  
+
+  // Function to handle submit button
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -46,8 +66,6 @@ export default function Contact() {
       setErrorMessage('Please enter a name and valid email.');
       return;
     }
-
-    // TODO: add onBlur functionality to alert user that all three inputs are required
 
     // Clear input after submission
     setName('');
@@ -65,6 +83,7 @@ export default function Contact() {
           name="name"
           onChange={handleInputChange}
           type="text"
+          onBlur={handleBlur}
           className="w-100 mb-1"
         />
         <p className="mb-0">email:</p>
@@ -73,6 +92,7 @@ export default function Contact() {
           name="email"
           onChange={handleInputChange}
           type="email"
+          onBlur={handleBlur}
           className="w-100 mb-1"
         />
         <div className="">
@@ -82,6 +102,7 @@ export default function Contact() {
           name="message"
           onChange={handleInputChange}
           type="text"
+          onBlur={handleBlur}
           style={styles.messageForm}
           className="w-100 mb-1"
         />
@@ -90,11 +111,14 @@ export default function Contact() {
           submit
         </button>
       </form>
+      <div style={styles.error}>
       {errorMessage && (
+        
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      </div>
     </div>
     </div>
   );

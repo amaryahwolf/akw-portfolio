@@ -3,13 +3,14 @@ import Projects from '../Projects'
 
 export default function Portfolio() {
     const projects = [
-    //   {
-    //     title: 'Garbage Fire',
-    //     description: 'A full stack application to browse your favorite reality television shows and connect with other users using HTML, CSS, JS, Node, Express, Sequelize, and Handlebars.',
-    //     // img: 'https://media.giphy.com/media/eZ9ZYCtQgUbOcx1qHk/giphy.gif',
-    //     github: 'https://github.com/amaryahwolf/garbage-fire',
-    //     deployed: 'https://garbage-fire.herokuapp.com/'
-    //   },
+        // TODO: update gif image functionality and resize images
+      {
+        title: 'Garbage Fire',
+        description: 'A full stack application to browse your favorite reality television shows and connect with other users using HTML, CSS, JS, Node, Express, Sequelize, and Handlebars.',
+        img: 'garbage-fire.png',
+        github: 'https://github.com/amaryahwolf/garbage-fire',
+        deployed: 'https://garbage-fire.herokuapp.com/'
+      },
       {
         title: 'Social-Network API',
         description: "A social network web application API where users can share their thoughts, react to friends' thoughts, and create a friends list using Express.js for routing, a MongoDB database, and the Mongoose ODM.",
@@ -31,13 +32,13 @@ export default function Portfolio() {
         github: 'https://github.com/amaryahwolf/readme-generator',
         deployed: 'https://drive.google.com/file/d/1WJxiPMeSTaFpVNFCK-rjiIzQ50bUPwyN/view?usp=share_link'
       },
-    //   {
-    //     title: 'Tech Talk',
-    //     description: 'A CMS-style blog site for sharing tech-related musings built with Handlebars and a SQL backend.',
-    //     // img: 'https://media.giphy.com/media/7HnkZ1497uy2IHjkUt/giphy.gif',
-    //     github: 'https://github.com/amaryahwolf/tech-blog',
-    //     deployed: 'https://akw-tech-talk.herokuapp.com/'
-    //   },
+      {
+        title: 'Tech Talk',
+        description: 'A CMS-style blog site for sharing tech-related musings built with Handlebars and a SQL backend.',
+        img: 'tech-talk.png',
+        github: 'https://github.com/amaryahwolf/tech-blog',
+        deployed: 'https://akw-tech-talk.herokuapp.com/'
+      },
       {
         title: 'Employee Tracker',
         description: "A content management system to manage a company's employee database, using Node.js, Inquirer, and MySQL.",

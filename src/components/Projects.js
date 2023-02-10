@@ -15,13 +15,13 @@ function Projects( { projects } ) {
     return (
     <div className="container-fluid row justify-content-center mt-5">
       {projects.map((project, index) => (
-        <div className="col-sm-6" key={generateKey(project.title)}>
+        <div className="col-sm-6 mb-3" key={generateKey(project.title)}>
           <img 
             style={styles.image}
             // alt={project.description}
             src={require(`../images/${project.img}`)}>
           </img>
-          <h4 className="text-center">
+          <h4 className="text-center mt-2">
             <a href={project.deployed} target="_blank">{project.title}   </a> 
             <a href={project.github} target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">

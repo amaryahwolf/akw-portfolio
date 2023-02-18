@@ -5,6 +5,13 @@ export default function Portfolio() {
     const projects = [
         // TODO: update gif image functionality and resize images
       {
+        title: 'Bryan Bot',
+        description: "BryanBot is a MERN stack application powered by OpenAI that allows users to write blocks of codes and receive plain English translation in return, as well as save their questions and responses for future reference.",
+        img: 'bryanbot.png',
+        github: 'https://github.com/amaryahwolf/c.a.i.t.s',
+        deployed: 'https://bryanbot.herokuapp.com/'
+      },
+      {
         title: 'Garbage Fire',
         description: 'A full stack application to browse your favorite reality television shows and connect with other users using HTML, CSS, JS, Node, Express, Sequelize, and Handlebars.',
         img: 'garbage-fire.png',

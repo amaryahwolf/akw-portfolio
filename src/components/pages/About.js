@@ -19,6 +19,9 @@ export default function About() {
       <p>
         I earned a certificate in Full-Stack Web Development from the University of California, Los Angeles, Extension Boot Camps in February 2023.
       </p>
+      <p>
+        Email me at amaryahwolf@gmail.com
+      </p>
     </div>
     </div>
   );

@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio'
 import Projects from './Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Acknowledgments from './pages/Acknowledgments';
 import Footer from './Footer';
 
 const styles = {
@@ -29,6 +30,9 @@ export default function PortfolioContainer() {
         if (currentPage === 'Resume') {
           return <Resume />;
         }
+        if (currentPage === 'Acknowledgments') {
+          return <Acknowledgments />;
+        }
         return <Contact />;
       };
 
@@ -40,7 +44,7 @@ export default function PortfolioContainer() {
     <div style={styles.font}>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />  
       {renderPage()}
-      <Footer />
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
     )
 

@@ -11,7 +11,7 @@ const styles = {
     }
 }
 
-function Footer() {
+function Footer(currentPage, handlePageChange) {
     return (
         <footer style={styles.footer} className="d-flex justify-content-center bg-light">   
         <ul className="d-flex justify-content-center list-unstyled">
@@ -33,14 +33,14 @@ function Footer() {
                     github    
                 </a>
             </li>
-            {/* TODO: add third platform */}
-            <li className="m-3">
-                {/* TODO: add acknowledgments page */}
+            {/* <li className="m-3">
                 <a
-                    href="" className="">
+                    href="#acknowledgments"
+                    onClick={() => handlePageChange('Acknowledgments')}
+                    className={currentPage === 'Acknowledgments' ? 'nav-link active' : 'nav-link'}>
                     acknowledgments   
                 </a>
-            </li>
+            </li> */}
         </ul>     
         </footer>
     )

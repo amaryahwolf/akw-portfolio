@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/akw-portfolio/static/css/main.fdbf215c.css",
-    "main.js": "/akw-portfolio/static/js/main.98b94292.js",
+    "main.js": "/akw-portfolio/static/js/main.ddc786bb.js",
     "static/media/garbage-fire.png": "/akw-portfolio/static/media/garbage-fire.22c2451ae5384f11d851.png",
+    "static/media/bryanbot.png": "/akw-portfolio/static/media/bryanbot.7ce3c19fd075c23a3ef9.png",
     "static/media/weather-or-not.png": "/akw-portfolio/static/media/weather-or-not.25faae80232dbe72ca5b.png",
     "static/media/tech-talk.png": "/akw-portfolio/static/media/tech-talk.358cd5ae30c577c9eedc.png",
     "static/media/social-network-api.png": "/akw-portfolio/static/media/social-network-api.43b7f7ae4755c75bc79f.png",
@@ -10,10 +11,10 @@
     "static/media/read-me-generator.png": "/akw-portfolio/static/media/read-me-generator.a4c96f35740cf32ab662.png",
     "index.html": "/akw-portfolio/index.html",
     "main.fdbf215c.css.map": "/akw-portfolio/static/css/main.fdbf215c.css.map",
-    "main.98b94292.js.map": "/akw-portfolio/static/js/main.98b94292.js.map"
+    "main.ddc786bb.js.map": "/akw-portfolio/static/js/main.ddc786bb.js.map"
   },
   "entrypoints": [
     "static/css/main.fdbf215c.css",
-    "static/js/main.98b94292.js"
+    "static/js/main.ddc786bb.js"
   ]
 }

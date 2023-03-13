@@ -11,9 +11,9 @@ const styles = {
     }
 }
 
-function Footer(currentPage, handlePageChange) {
+function Footer({ currentPage, handlePageChange }) {
     return (
-        <footer style={styles.footer} className="d-flex justify-content-center bg-light">
+        <footer style={styles.footer} className="nav justify-content-center align-items-center bg-light">
             <ul className="d-flex justify-content-center list-unstyled">
                 <li className="m-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16" className=''>
@@ -33,14 +33,14 @@ function Footer(currentPage, handlePageChange) {
                         github
                     </a>
                 </li>
-                {/* <li className="m-3">
-                <a
-                    href="#acknowledgments"
-                    onClick={() => handlePageChange('Acknowledgments')}
-                    className={currentPage === 'Acknowledgments' ? 'nav-link active' : 'nav-link'}>
+                <li className="m-2">
+                    <a
+                        href="#acknowledgments"
+                        onClick={() => handlePageChange('Acknowledgments')}
+                        className={currentPage === 'Acknowledgments' ? 'nav-link active' : 'nav-link'}>
                     acknowledgments   
-                </a>
-            </li> */}
+                    </a>
+            </li>
             </ul>
         </footer>
     )

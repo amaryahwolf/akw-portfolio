@@ -51,7 +51,7 @@ export default function Portfolio() {
       description: "A content management system to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
       img: 'employee-tracker.png',
       github: 'https://github.com/amaryahwolf/employee-tracker',
-      deployed: 'https://drive.google.com/file/d/1WJxiPMeSTaFpVNFCK-rjiIzQ50bUPwyN/view?usp=share_link'
+      deployed: 'https://drive.google.com/file/d/1F6Ufics5ZlJexiTJ_I28BunVThkp_5ES/view?usp=sharing'
     },
   ];
   return (

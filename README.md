@@ -1,4 +1,4 @@
-# Social Network API
+# AKW Porfolio
 
 ## [Deployed Application](https://amaryahwolf.github.io/akw-portfolio/)
  

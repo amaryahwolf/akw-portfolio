@@ -29,10 +29,11 @@ function Projects({ projects }) {
               </svg>
             </a>
           </h4>
-          <p className="text-center">
+          <div className="d-flex justify-content-center">
+          <p className="w-75 text-center">
             {project.description}
           </p>
-
+          </div>
         </div>
       )
       )}
